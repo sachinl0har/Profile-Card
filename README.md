@@ -1,5 +1,5 @@
 # Profile-Card
-
+<!DOCTYPE html>
 <html>
 <body>
 <footer id="footer">
