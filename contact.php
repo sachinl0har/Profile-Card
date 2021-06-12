@@ -4,7 +4,7 @@
     $email = $_POST['email'];
     $message = $_POST['message'];
 
-    $conn = new mysqli('localhost', 'root', '', 'contactsachinl0har');
+    $conn = new mysqli('localhost', 'root', '', 'contact');
     if($conn->connect_error){
         die('Connection Failed : '.$conn->connect_error);
     }else{
