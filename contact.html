@@ -51,4 +51,20 @@
         <a href="./index.html">Home</a>
     </div>
 </body>
+<script type="text/javascript">
+    var $form = $('form#contact-form'),
+    url = 'https://script.google.com/macros/s/AKfycbwq1FoWdBceyy_GK8xRUrzJXoOjg99jktOulbLIavoREOHz8v932Yu58beYtNFWCamm/exec'
+
+$('#submit-form').on('click', function(e) {
+  e.preventDefault();
+  var jqxhr = $.ajax({
+    url: url,
+    method: "GET",
+    dataType: "json",
+    data: $form.serializeObject()
+  }).success(
+    // do something
+  );
+})
+  </script>
 </html>
